@@ -1,0 +1,1967 @@
+#compoundwords off
+#allaffixes off
+#
+#defstringtype "latin7" "TeX" ".latin7"
+#
+#wordchars a A
+#stringchar ā Ā
+#wordchars [bc] [BC]
+#stringchar č Č
+#wordchars [de] [DE]
+#stringchar ē Ē
+#wordchars [fg] [FG]
+#stringchar ģ Ģ
+#wordchars [hi] [HI]
+#stringchar ī Ī
+#wordchars [jk] [JK]
+#stringchar ķ Ķ
+#wordchars l L
+#stringchar ļ Ļ
+#wordchars [mnoprs] [mnoprs]
+#stringchar š Š
+#wordchars [tu] [TU]
+#stringchar ū Ū
+#wordchars [vz] [VZ]
+#stringchar ž Ž
+
+prefixes
+
+flag A:
+   .    > NE
+
+suffixes
+
+flag *B:
+   [^SZ]T    > -T,ŠU
+   [^SZ]T    > -T,SI
+   [^SZ]T    > -T,S
+   [^SZ]T    > -T,SIM
+   [^SZ]T    > -T,SIET
+   [^SZ]T    > -T,SIT
+   [^SZ]T    > -T,ŠOT     #atst izt.v.nak
+   [S]T    > -ST,TĪŠU
+   [S]T    > -ST,TĪSI
+   [S]T    > -ST,TĪS
+   [S]T    > -ST,TĪSIM
+   [S]T    > -ST,TĪSIET
+   [S]T    > -ST,TĪSIT
+   [S]T    > -ST,TĪŠOT     #atst izt.v.nak
+   [Z]T    > -T,ĪŠU
+   [Z]T    > -T,ĪSI
+   [Z]T    > -T,ĪS
+   [Z]T    > -T,ĪSIM
+   [Z]T    > -T,ĪSIET
+   [Z]T    > -T,ĪSIT
+   [Z]T    > -T,ĪŠOT     #atst izt.v.nak
+
+flag *F:
+   [S]T    > -T,ĪŠU
+   [S]T    > -T,ĪSI
+   [S]T    > -T,ĪS
+   [S]T    > -T,ĪSIM
+   [S]T    > -T,ĪSIET
+   [S]T    > -T,ĪSIT
+   [S]T    > -T,ĪŠOT     #atst izt.v.nak
+
+flag *E:
+   [S]T    > -ST,DĪŠU
+   [S]T    > -ST,DĪSI
+   [S]T    > -ST,DĪS
+   [S]T    > -ST,DĪSIM
+   [S]T    > -ST,DĪSIET
+   [S]T    > -ST,DĪSIT
+   [S]T    > -ST,DĪŠOT    #atst izt.v.nak
+   [S]T    > -ST,DU     #pagĀtne
+   [S]T    > -ST,DI
+   [S]T    > -ST,DA
+   [S]T    > -ST,DĀM
+   [S]T    > -ST,DĀT
+   [S]T    > -ST,DIS
+   [S]T    > -ST,DUŠA
+   [S]T    > -ST,DUŠAM
+   [S]T    > -ST,DUŠU
+   [S]T    > -ST,DUŠĀ
+   [S]T    > -ST,DUSI
+   [S]T    > -ST,DUŠAS
+   [S]T    > -ST,DUŠAI
+   [S]T    > -ST,DUŠI
+   [S]T    > -ST,DUŠIEM
+   [S]T    > -ST,DUŠUS
+   [S]T    > -ST,DUŠOS
+   [S]T    > -ST,DUŠĀM
+   [S]T    > -ST,DUŠĀS
+   [S]T    > -ST,DUŠAIS
+   [S]T    > -ST,DUŠAJAM
+   [S]T    > -ST,DUŠO
+   [S]T    > -ST,DUŠAJĀ
+   [S]T    > -ST,DUSĪ
+   [S]T    > -ST,DUŠAJAI
+   [S]T    > -ST,DUŠIE
+   [S]T    > -ST,DUŠAJIEM
+   [S]T    > -ST,DUŠAJOS
+   [S]T    > -ST,DUŠAJĀM
+   [S]T    > -ST,DUŠAJĀS
+
+flag *4:
+   [^ĪŪ]T    > -T,U
+   [^ĪŪ]T    > -T,I
+   [^ĪŪ]T    > -T,A
+   [^ĪŪ]T    > -T,ĀM
+   [^ĪŪ]T    > -T,ĀT
+   [Ī]T    > -ĪT,INU
+   [Ī]T    > -ĪT,INI
+   [Ī]T    > -ĪT,INA
+   [Ī]T    > -ĪT,INĀM
+   [Ī]T    > -ĪT,INĀT
+   [Ū]T    > -ŪT,UVU
+   [Ū]T    > -ŪT,UVI
+   [Ū]T    > -ŪT,UVA
+   [Ū]T    > -ŪT,UVĀM
+   [Ū]T    > -ŪT,UVĀT
+
+flag *5:
+   [G]T    > -GT,DZU
+   [G]T    > -GT,DZI
+   [G]T    > -GT,DZA
+   [G]T    > -GT,DZĀM
+   [G]T    > -GT,DZĀT
+   [K]T    > -KT,CU
+   [K]T    > -KT,CI
+   [K]T    > -KT,CA
+   [K]T    > -KT,CĀM
+   [K]T    > -KT,CĀT
+   [S]T    > -ST,JU
+   [S]T    > -ST,JI
+   [S]T    > -ST,JA
+   [S]T    > -ST,JĀM
+   [S]T    > -ST,JĀT
+   [A]UT    > -AUT,ĀVU
+   [A]UT    > -AUT,ĀVI
+   [A]UT    > -AUT,ĀVA
+   [A]UT    > -AUT,ĀVĀM
+   [A]UT    > -AUT,ĀVĀT
+   [^EIU]LT    > -T,U
+   [^EIU]LT    > -T,I
+   [^EIU]LT    > -T,A
+   [^EIU]LT    > -T,ĀM
+   [^EIU]LT    > -T,ĀT
+   [E]LT    > -ELT,ĒLU
+   [E]LT    > -ELT,ĒLI
+   [E]LT    > -ELT,ĒLA
+   [E]LT    > -ELT,ĒLĀM
+   [E]LT    > -ELT,ĒLĀT
+   [I]LT    > -ILT,ĪLU
+   [I]LT    > -ILT,ĪLI
+   [I]LT    > -ILT,ĪLA
+   [I]LT    > -ILT,ĪLĀM
+   [I]LT    > -ILT,ĪLĀT
+   [U]LT    > -ULT,ŪLU
+   [U]LT    > -ULT,ŪLI
+   [U]LT    > -ULT,ŪLA
+   [U]LT    > -ULT,ŪLĀM
+   [U]LT    > -ULT,ŪLĀT
+   [^AEIU]RT    > -T,U
+   [^AEIU]RT    > -T,I
+   [^AEIU]RT    > -T,A
+   [^AEIU]RT    > -T,ĀM
+   [^AEIU]RT    > -T,ĀT
+   [A]RT    > -ART,ĀRU
+   [A]RT    > -ART,ĀRI
+   [A]RT    > -ART,ĀRA
+   [A]RT    > -ART,ĀRĀM
+   [A]RT    > -ART,ĀRĀT
+   [E]RT    > -ERT,ĒRU
+   [E]RT    > -ERT,ĒRI
+   [E]RT    > -ERT,ĒRA
+   [E]RT    > -ERT,ĒRĀM
+   [E]RT    > -ERT,ĒRĀT
+   [I]RT    > -IRT,ĪRU
+   [I]RT    > -IRT,ĪRI
+   [I]RT    > -IRT,ĪRA
+   [I]RT    > -IRT,ĪRĀM
+   [I]RT    > -IRT,ĪRĀT
+   [U]RT    > -URT,ŪRU
+   [U]RT    > -URT,ŪRI
+   [U]RT    > -URT,ŪRA
+   [U]RT    > -URT,ŪRĀM
+   [U]RT    > -URT,ŪRĀT
+
+flag *1:
+   [ĀĒĪOŪ]T    > -T,JU
+   [ĀĒĪOŪ]T    > -T,JI
+   [ĀĒĪOŪ]T    > -T,JA
+   [ĀĒĪOŪ]T    > -T,JĀM
+   [ĀĒĪOŪ]T    > -T,JĀT
+
+flag *H:
+   [ĀĒĪOŪ]T    > -T,JU
+   [ĀĒĪOŪ]T    > -T,
+   [ĀĒĪOŪ]T    > -T,JAM
+   [ĀĒĪOŪ]T    > -T,JAT
+   [ĀĒĪOŪ]T    > -T,JIET
+   [ĀĒĪOŪ]T    > -T,JOT
+
+flag *G:
+   [ĀĒĪOŪ]T    > -T,JAS    # IIk refl. tagadne
+   [ĀĒĪOŪ]T    > -T,JAMIES
+   [ĀĒĪOŪ]T    > -T,JATIES    # beigas tagadnei
+   [ĀĒĪOŪ]T    > -T,JIETIES    # IIk refl. pavĒle
+   [ĀĒĪOŪ]T    > -T,JOTIES    # IIk refl. atst.izt.v.tag.
+
+flag *C:
+   [^J][Ā]T    > -ĀT,U     #tag, Ip
+   [^J][Ā]T    > -ĀT,I     #tag, Ip
+   [^J][Ā]T    > -ĀT,A     #tag, Ip
+   [^J][Ā]T    > -ĀT,ĀM     #tag, Ip
+   [^J][Ā]T    > -ĀT,OT     #atst.izst.v.tag
+   [^J][Ā]T    > -ĀT,IET     #pavĒle
+   [Ē]T    > -ĒT,U     #tag, Ip
+   [Ē]T    > -ĒT,I     #tag, IIp
+   [Ē]T    > -ĒT,     #tag, IIIp
+   [Ē]T    > -ĒT,AM     #tag, Ip
+   [Ē]T    > -ĒT,AT     #tag, IIp
+   [Ē]T    > -ĒT,IET     #pavĒle
+   [Ē]T    > -ĒT,OT     #atst.izst.v.tag
+   [Ī]T    > -ĪT,U     #tag, Ip
+   [Ī]T    > -ĪT,I     #tag, IIp
+   [Ī]T    > -ĪT,A     #tag, IIIp
+   [Ī]T    > -ĪT,ĀM     #tag, Ip
+   [Ī]T    > -ĪT,ĀT     #tag, IIp
+   [Ī]T    > -ĪT,IET     #pavĒle
+   [Ī]T    > -ĪT,OT     #atst.izst.v.tag
+
+flag *c:
+   [Ā]T    > IES    #relf.nenoteiksme
+   [Ā]T    > -ĀT,OS    #tag, Ip
+   [Ā]T    > -ĀT,IES    #tag, IIp
+   [Ā]T    > -T,MIES    #tag, Ip
+   [Ā]T    > -ĀT,IETIES    #pavĒle
+   [Ā]T    > -ĀT,OTIES    #atst.izst.v.tag
+   [Ā]T    > -T,ŠOTIES    #atst.izst.v.nak
+   [Ē]T    > IES    #relf.nenoteiksme ----------
+   [Ē]T    > -ĒT,OS    #tag, Ip 
+   [Ē]T    > -ĒT,IES    #tag, IIp
+   [Ē]T    > -ĒT,AS    #tag, IIIp
+   [Ē]T    > -ĒT,AMIES    #tag, Ip.d.
+   [Ē]T    > -ĒT,ATIES    #tag, IIp.d
+   [Ē]T    > -ĒT,IETIES    #pavĒle
+   [Ē]T    > -ĒT,OTIES    #atst.izst.v.tag
+   [Ē]T    > -T,ŠOTIES    #atst.izst.v.nak ------
+   [Ī]T    > IES    #relf.nenoteiksme
+   [Ī]T    > -ĪT,OS    #tag, Ip
+   [Ī]T    > -ĪT,IES    #tag, Ip
+   [Ī]T    > -ĪT,ĀS    #tag, Ip
+   [Ī]T    > -ĪT,ĀMIES    #tag, Ip
+   [Ī]T    > -ĪT,ĀTIES    #tag, Ip
+   [Ī]T    > -ĪT,IETIES    #
+   [Ī]T    > -ĪT,OTIES    #atst.izst.v.tag
+   [Ī]T    > -T,ŠOTIES    #atst.izst.v.nak
+   [Ā]T    > OS    #cieshamaa k.
+   [Ē]T    > OS    #cieshamaa k.
+   [Ī]T    > OS    #cieshamaa k.
+
+flag *6:
+   [ĀĒUBMP]T    > -T,JU
+   [BMP]T    > -T,
+   [ĀĒUBMP]T    > -T,J
+   [ĀĒUBMP]T    > -T,JAM
+   [ĀĒUBMP]T    > -T,JAT
+   [ĀĒUBMP]T    > -T,JOT    #atst.izt.v.tag
+   [ĀĒU]T    > -T,JIET    #pavĒle
+   [BMP]T    > -T,IET    #pavĒle
+   [ĀĒU]T    > -T,J
+   [G]T    > -GT,DZU
+   [G]T    > -GT,DZ
+   [G]T    > -GT,DZAM
+   [G]T    > -GT,DZAT
+   [G]T    > -GT,DZOT    #atst.izt.v.tag
+   [G]T    > -GT,DZIET
+   [K]T    > -KT,CU
+   [K]T    > -KT,C
+   [K]T    > -KT,CAM
+   [K]T    > -KT,CAT
+   [K]T    > -KT,COT    #atst.izt.v.tag
+   [K]T    > -KT,CIET
+   [Ū]T    > -ŪT,UJU
+   [Ū]T    > -ŪT,UJ
+   [Ū]T    > -ŪT,UJAM
+   [Ū]T    > -ŪT,UJAT
+   [Ū]T    > -ŪT,UJOT    #atst.izt.v.tag
+   [Ū]T    > -ŪT,UJIET
+   [Z]T    > -ZT,žU
+   [Z]T    > -T,
+   [Z]T    > -ZT,ž
+   [Z]T    > -ZT,žAM
+   [Z]T    > -ZT,žAT
+   [Z]T    > -ZT,žOT    #atst.izt.v.tag
+   [LZ]T    > -T,IET
+   [L]T    > -LT,ĻU
+   [L]T    > -T,
+   [L]T    > -LT,Ļ
+   [L]T    > -LT,ĻAM
+   [L]T    > -LT,ĻAT
+   [L]T    > -LT,ĻOT    #atst.izt.v.tag
+   [^ĀĒ][R]T    > -T,U
+   [^ĀĒ][R]T    > -T,
+   [^ĀĒ][R]T    > -T,AM
+   [^ĀĒ][R]T    > -T,AT
+   [^ĀĒ][R]T    > -T,IET
+   [^ĀĒ][R]T    > -T,OT
+   [Ā]RT    > -ĀRT,ARU
+   [Ā]RT    > -ĀRT,AR  # Ā Ē speciĀlie
+   [Ā]RT    > -ĀRT,ARAM
+   [Ā]RT    > -ĀRT,ARAT
+   [Ā]RT    > -ĀRT,AROT    #atst.izt.v.tag
+   [Ā]RT    > -ĀRT,ARIET
+   [Ē]RT    > -ĒRT,ERU
+   [Ē]RT    > -ĒRT,ER  # Ā Ē speciĀlie
+   [Ē]RT    > -ĒRT,ERAM
+   [Ē]RT    > -ĒRT,ERAT
+   [Ē]RT    > -ĒRT,EROT    #atst.izt.v.tag
+   [Ē]RT    > -ĒRT,ERIET
+   [Z]T    > -ZT,žOŠS
+   [Z]T    > -ZT,žOŠA
+   [Z]T    > -ZT,žOŠAM
+   [Z]T    > -ZT,žOŠU
+   [Z]T    > -ZT,žOŠĀ
+   [Z]T    > -ZT,žOŠAS
+   [Z]T    > -ZT,žOŠAI
+   [Z]T    > -ZT,žOŠI
+   [Z]T    > -ZT,žOŠIEM
+   [Z]T    > -ZT,žOŠUS
+   [Z]T    > -ZT,žOŠOS
+   [Z]T    > -ZT,žOŠĀM
+   [Z]T    > -ZT,žOŠĀS
+   [Z]T    > -ZT,žOŠAIS
+   [Z]T    > -ZT,žOŠAJAM
+   [Z]T    > -ZT,žOŠO
+   [Z]T    > -ZT,žOŠAJĀ
+   [Z]T    > -ZT,žOŠAJAI
+   [Z]T    > -ZT,žOŠIE
+   [Z]T    > -ZT,žOŠAJIEM
+   [Z]T    > -ZT,žOŠAJOS
+   [Z]T    > -ZT,žOŠAJĀM
+   [Z]T    > -ZT,žOŠAJĀS
+   [Z]T    > -ZT,žAMS
+   [Z]T    > -ZT,žAMA
+   [Z]T    > -ZT,žAMAM
+   [Z]T    > -ZT,žAMU
+   [Z]T    > -ZT,žAMĀ
+   [Z]T    > -ZT,žAMAS
+   [Z]T    > -ZT,žAMAI
+   [Z]T    > -ZT,žAMI
+   [Z]T    > -ZT,žAMIEM
+   [Z]T    > -ZT,žAMUS
+   [Z]T    > -ZT,žAMOS
+   [Z]T    > -ZT,žAMĀM
+   [Z]T    > -ZT,žAMĀS
+   [Z]T    > -ZT,žAMAIS
+   [Z]T    > -ZT,žAMAJAM
+   [Z]T    > -ZT,žAMO
+   [Z]T    > -ZT,žAMAJĀ
+   [Z]T    > -ZT,žAMAJAI
+   [Z]T    > -ZT,žAMIE
+   [Z]T    > -ZT,žAMAJIEM
+   [Z]T    > -ZT,žAMAJOS
+   [Z]T    > -ZT,žAMAJĀM
+   [Z]T    > -ZT,žAMAJĀS
+
+flag *2:
+   [S]T    > -ST,žU   # tagadne
+   [S]T    > -ST,D
+   [S]T    > -ST,ž
+   [S]T    > -ST,žAM
+   [S]T    > -ST,žAT
+   [S]T    > -ST,žOT    #atst.izt.v.tag
+   [S]T    > -ST,DIET
+
+flag *3:
+   [S]T    > -ST,ŠU
+   [S]T    > -T,
+   [S]T    > -ST,Š
+   [S]T    > -ST,ŠAM
+   [S]T    > -ST,ŠAT
+   [S]T    > -ST,ŠOT    #atst.izt.v.tag
+
+flag *7:
+   [^SZ]T    > -T,STU
+   [^SZ]T    > -T,STI
+   [^SZ]T    > -T,ST
+   [^SZ]T    > -T,STAM
+   [^SZ]T    > -T,STAT
+   [^SZ]T    > -T,STOT
+   [^SZ]T    > -T,STIET
+   [SZ]T    > I
+   [SZ]T    > AM
+   [SZ]T    > AT
+   [SZ]T    > OT
+   [SZ]T    > IET
+
+flag *M:
+   T    > -T,DAMS
+   T    > -T,DAMA
+   T    > -T,DAMI
+   T    > -T,DAMAS
+
+flag *N:
+   [S]T    > -ST,ZDAMS
+   [S]T    > -ST,ZDAMA
+   [S]T    > -ST,ZDAMI
+   [S]T    > -ST,ZDAMAS
+
+#modificĒts 2006.04.06
+flag *[:
+   T    > -T,DAMIES
+   T    > -T,DAMĀS
+   [^SZ]T    > -T,ŠANOS
+   [S]T    > -ST,ŠANOS
+   [Z]T    > -ZT,ŠANOS
+
+
+flag *]:
+   [S]T    > -ST,ZDAMIES
+   [S]T    > -ST,ZDAMĀS
+
+flag *{:
+   T    > -T,JUŠIES
+   T    > -T,JUSIES
+   T    > -T,JOŠIES
+   T    > -T,JIES
+
+#2006-08-06 - pievienots sfx -oŠies (III konj, piem.)
+flag *}:
+   T    > -T,UŠIES
+   T    > -T,USIES
+   T    > -T,OŠIES
+   T    > -T,IES
+
+flag *Z:
+   T    > -T,STAMS
+   T    > -T,STAMA
+   T    > -T,STAMAM
+   T    > -T,STAMU
+   T    > -T,STAMĀ
+   T    > -T,STAMAS
+   T    > -T,STAMAI
+   T    > -T,STAMI
+   T    > -T,STAMIEM
+   T    > -T,STAMUS
+   T    > -T,STAMOS
+   T    > -T,STAMĀM
+   T    > -T,STAMĀS
+   T    > -T,STAMAIS
+   T    > -T,STAMAJAM
+   T    > -T,STAMO
+   T    > -T,STAMAJĀ
+   T    > -T,STAMAJAI
+   T    > -T,STAMIE
+   T    > -T,STAMAJIEM
+   T    > -T,STAMAJOS
+   T    > -T,STAMAJĀM
+   T    > -T,STAMAJĀS
+
+flag *):
+   T    > -T,JAMS
+   T    > -T,JAMA
+   T    > -T,JAMAM
+   T    > -T,JAMU
+   T    > -T,JAMĀ
+   T    > -T,JAMAS
+   T    > -T,JAMAI
+   T    > -T,JAMI
+   T    > -T,JAMIEM
+   T    > -T,JAMUS
+   T    > -T,JAMOS
+   T    > -T,JAMĀM
+   T    > -T,JAMĀS
+   T    > -T,JAMAIS
+   T    > -T,JAMAJAM
+   T    > -T,JAMO
+   T    > -T,JAMAJĀ
+   T    > -T,JAMAJAI
+   T    > -T,JAMIE
+   T    > -T,JAMAJIEM
+   T    > -T,JAMAJOS
+   T    > -T,JAMAJĀM
+   T    > -T,JAMAJĀS
+
+#iebĀzti III konjugĀcijas am (tipa [^ĀĒĪ]t
+flag *(:
+   [^ĀĒĪ]T    > -T,AMS
+   [^ĀĒĪ]T    > -T,AMA
+   [^ĀĒĪ]T    > -T,AMĀ
+   [^ĀĒĪ]T    > -T,AMAI
+   [^ĀĒĪ]T    > -T,AMAIS
+   [^ĀĒĪ]T    > -T,AMAJĀ
+   [^ĀĒĪ]T    > -T,AMAJAI
+   [^ĀĒĪ]T    > -T,AMAJAM
+   [^ĀĒĪ]T    > -T,AMAJĀM
+   [^ĀĒĪ]T    > -T,AMAJĀS
+   [^ĀĒĪ]T    > -T,AMAJIEM
+   [^ĀĒĪ]T    > -T,AMAJOS
+   [^ĀĒĪ]T    > -T,AMAM
+   [^ĀĒĪ]T    > -T,AMĀM
+   [^ĀĒĪ]T    > -T,AMAS
+   [^ĀĒĪ]T    > -T,AMĀS
+   [^ĀĒĪ]T    > -T,AMI
+   [^ĀĒĪ]T    > -T,AMIE
+   [^ĀĒĪ]T    > -T,AMIEM
+   [^ĀĒĪ]T    > -T,AMO
+   [^ĀĒĪ]T    > -T,AMOS
+   [^ĀĒĪ]T    > -T,AMU
+   [^ĀĒĪ]T    > -T,AMUS
+   [^CZ][Ī]T    > -ĪT,ĀMS
+   [^CZ][Ī]T    > -ĪT,ĀMA
+   [^CZ][Ī]T    > -ĪT,ĀMAM
+   [^CZ][Ī]T    > -ĪT,ĀMU
+   [^CZ][Ī]T    > -ĪT,ĀMĀ
+   [^CZ][Ī]T    > -ĪT,ĀMAS
+   [^CZ][Ī]T    > -ĪT,ĀMAI
+   [^CZ][Ī]T    > -ĪT,ĀMI
+   [^CZ][Ī]T    > -ĪT,ĀMIEM
+   [^CZ][Ī]T    > -ĪT,ĀMUS
+   [^CZ][Ī]T    > -ĪT,ĀMOS
+   [^CZ][Ī]T    > -ĪT,ĀMĀM
+   [^CZ][Ī]T    > -ĪT,ĀMĀS
+   [^CZ][Ī]T    > -ĪT,ĀMAIS
+   [^CZ][Ī]T    > -ĪT,ĀMAJAM
+   [^CZ][Ī]T    > -ĪT,ĀMO
+   [^CZ][Ī]T    > -ĪT,ĀMAJĀ
+   [^CZ][Ī]T    > -ĪT,ĀMAJAI
+   [^CZ][Ī]T    > -ĪT,ĀMIE
+   [^CZ][Ī]T    > -ĪT,ĀMAJIEM
+   [^CZ][Ī]T    > -ĪT,ĀMAJOS
+   [^CZ][Ī]T    > -ĪT,ĀMAJĀM
+   [^CZ][Ī]T    > -ĪT,ĀMAJĀS
+   [C][Ī]T    > -CĪT,KĀMS
+   [C][Ī]T    > -CĪT,KĀMA
+   [C][Ī]T    > -CĪT,KĀMAM
+   [C][Ī]T    > -CĪT,KĀMU
+   [C][Ī]T    > -CĪT,KĀMĀ
+   [C][Ī]T    > -CĪT,KĀMAS
+   [C][Ī]T    > -CĪT,KĀMAI
+   [C][Ī]T    > -CĪT,KĀMI
+   [C][Ī]T    > -CĪT,KĀMIEM
+   [C][Ī]T    > -CĪT,KĀMUS
+   [C][Ī]T    > -CĪT,KĀMOS
+   [C][Ī]T    > -CĪT,KĀMĀM
+   [C][Ī]T    > -CĪT,KĀMĀS
+   [C][Ī]T    > -CĪT,KĀMAIS
+   [C][Ī]T    > -CĪT,KĀMAJAM
+   [C][Ī]T    > -CĪT,KĀMO
+   [C][Ī]T    > -CĪT,KĀMAJĀ
+   [C][Ī]T    > -CĪT,KĀMAJAI
+   [C][Ī]T    > -CĪT,KĀMIE
+   [C][Ī]T    > -CĪT,KĀMAJIEM
+   [C][Ī]T    > -CĪT,KĀMAJOS
+   [C][Ī]T    > -CĪT,KĀMAJĀM
+   [C][Ī]T    > -CĪT,KĀMAJĀS
+   [^D]ZĪT    > -ĪT,ĀMS
+   [^D]ZĪT    > -ĪT,ĀMA
+   [^D]ZĪT    > -ĪT,ĀMAM
+   [^D]ZĪT    > -ĪT,ĀMU
+   [^D]ZĪT    > -ĪT,ĀMĀ
+   [^D]ZĪT    > -ĪT,ĀMAS
+   [^D]ZĪT    > -ĪT,ĀMAI
+   [^D]ZĪT    > -ĪT,ĀMI
+   [^D]ZĪT    > -ĪT,ĀMIEM
+   [^D]ZĪT    > -ĪT,ĀMUS
+   [^D]ZĪT    > -ĪT,ĀMOS
+   [^D]ZĪT    > -ĪT,ĀMĀM
+   [^D]ZĪT    > -ĪT,ĀMĀS
+   [^D]ZĪT    > -ĪT,ĀMAIS
+   [^D]ZĪT    > -ĪT,ĀMAJAM
+   [^D]ZĪT    > -ĪT,ĀMO
+   [^D]ZĪT    > -ĪT,ĀMAJĀ
+   [^D]ZĪT    > -ĪT,ĀMAJAI
+   [^D]ZĪT    > -ĪT,ĀMIE
+   [^D]ZĪT    > -ĪT,ĀMAJIEM
+   [^D]ZĪT    > -ĪT,ĀMAJOS
+   [^D]ZĪT    > -ĪT,ĀMAJĀM
+   [^D]ZĪT    > -ĪT,ĀMAJĀS
+   [D]ZĪT    > -DZĪT,GĀMS
+   [D]ZĪT    > -DZĪT,GĀMA
+   [D]ZĪT    > -DZĪT,GĀMAM
+   [D]ZĪT    > -DZĪT,GĀMU
+   [D]ZĪT    > -DZĪT,GĀMĀ
+   [D]ZĪT    > -DZĪT,GĀMAS
+   [D]ZĪT    > -DZĪT,GĀMAI
+   [D]ZĪT    > -DZĪT,GĀMI
+   [D]ZĪT    > -DZĪT,GĀMIEM
+   [D]ZĪT    > -DZĪT,GĀMUS
+   [D]ZĪT    > -DZĪT,GĀMOS
+   [D]ZĪT    > -DZĪT,GĀMĀM
+   [D]ZĪT    > -DZĪT,GĀMĀS
+   [D]ZĪT    > -DZĪT,GĀMAIS
+   [D]ZĪT    > -DZĪT,GĀMAJAM
+   [D]ZĪT    > -DZĪT,GĀMO
+   [D]ZĪT    > -DZĪT,GĀMAJĀ
+   [D]ZĪT    > -DZĪT,GĀMAJAI
+   [D]ZĪT    > -DZĪT,GĀMIE
+   [D]ZĪT    > -DZĪT,GĀMAJIEM
+   [D]ZĪT    > -DZĪT,GĀMAJOS
+   [D]ZĪT    > -DZĪT,GĀMAJĀM
+   [D]ZĪT    > -DZĪT,GĀMAJĀS
+   [^T][Ē]T    > -ĒT,AMS
+   [^T][Ē]T    > -ĒT,AMA
+   [^T][Ē]T    > -ĒT,AMĀ
+   [^T][Ē]T    > -ĒT,AMAI
+   [^T][Ē]T    > -ĒT,AMAIS
+   [^T][Ē]T    > -ĒT,AMAJĀ
+   [^T][Ē]T    > -ĒT,AMAJAI
+   [^T][Ē]T    > -ĒT,AMAJAM
+   [^T][Ē]T    > -ĒT,AMAJĀM
+   [^T][Ē]T    > -ĒT,AMAJĀS
+   [^T][Ē]T    > -ĒT,AMAJIEM
+   [^T][Ē]T    > -ĒT,AMAJOS
+   [^T][Ē]T    > -ĒT,AMAM
+   [^T][Ē]T    > -ĒT,AMĀM
+   [^T][Ē]T    > -ĒT,AMAS
+   [^T][Ē]T    > -ĒT,AMĀS
+   [^T][Ē]T    > -ĒT,AMI
+   [^T][Ē]T    > -ĒT,AMIE
+   [^T][Ē]T    > -ĒT,AMIEM
+   [^T][Ē]T    > -ĒT,AMO
+   [^T][Ē]T    > -ĒT,AMOS
+   [^T][Ē]T    > -ĒT,AMU
+   [^T][Ē]T    > -ĒT,AMUS
+   [T][Ē]T    > -TĒT,TAMS
+   [T][Ē]T    > -TĒT,TAMA
+   [T][Ē]T    > -TĒT,TAMĀ
+   [T][Ē]T    > -TĒT,TAMAI
+   [T][Ē]T    > -TĒT,TAMAIS
+   [T][Ē]T    > -TĒT,TAMAJĀ
+   [T][Ē]T    > -TĒT,TAMAJAI
+   [T][Ē]T    > -TĒT,TAMAJAM
+   [T][Ē]T    > -TĒT,TAMAJĀM
+   [T][Ē]T    > -TĒT,TAMAJĀS
+   [T][Ē]T    > -TĒT,TAMAJIEM
+   [T][Ē]T    > -TĒT,TAMAJOS
+   [T][Ē]T    > -TĒT,TAMAM
+   [T][Ē]T    > -TĒT,TAMĀM
+   [T][Ē]T    > -TĒT,TAMAS
+   [T][Ē]T    > -TĒT,TAMĀS
+   [T][Ē]T    > -TĒT,TAMI
+   [T][Ē]T    > -TĒT,TAMIE
+   [T][Ē]T    > -TĒT,TAMIEM
+   [T][Ē]T    > -TĒT,TAMO
+   [T][Ē]T    > -TĒT,TAMOS
+   [T][Ē]T    > -TĒT,TAMU
+   [T][Ē]T    > -TĒT,TAMUS
+   [Ā]T    > -T,MS
+   [Ā]T    > -T,MA
+   [Ā]T    > -T,MAM
+   [Ā]T    > -T,MU
+   [Ā]T    > -T,MĀ
+   [Ā]T    > -T,MAS
+   [Ā]T    > -T,MAI
+   [Ā]T    > -T,MI
+   [Ā]T    > -T,MIEM
+   [Ā]T    > -T,MUS
+   [Ā]T    > -T,MOS
+   [Ā]T    > -T,MĀM
+   [Ā]T    > -T,MĀS
+   [Ā]T    > -T,MAIS
+   [Ā]T    > -T,MAJAM
+   [Ā]T    > -T,MO
+   [Ā]T    > -T,MAJĀ
+   [Ā]T    > -T,MAJAI
+   [Ā]T    > -T,MIE
+   [Ā]T    > -T,MAJIEM
+   [Ā]T    > -T,MAJOS
+   [Ā]T    > -T,MAJĀM
+   [Ā]T    > -T,MAJĀS
+
+
+flag *^:
+   T    > -T,STOŠS
+   T    > -T,STOŠA
+   T    > -T,STOŠAM
+   T    > -T,STOŠU
+   T    > -T,STOŠĀ
+   T    > -T,STOŠAS
+   T    > -T,STOŠAI
+   T    > -T,STOŠI
+   T    > -T,STOŠIEM
+   T    > -T,STOŠUS
+   T    > -T,STOŠOS
+   T    > -T,STOŠĀM
+   T    > -T,STOŠĀS
+   T    > -T,STOŠAIS
+   T    > -T,STOŠAJAM
+   T    > -T,STOŠO
+   T    > -T,STOŠAJĀ
+   T    > -T,STOŠAJAI
+   T    > -T,STOŠIE
+   T    > -T,STOŠAJIEM
+   T    > -T,STOŠAJOS
+   T    > -T,STOŠAJĀM
+   T    > -T,STOŠAJĀS
+
+flag *$:
+   T    > -T,JOŠS
+   T    > -T,JOŠA
+   T    > -T,JOŠAM
+   T    > -T,JOŠU
+   T    > -T,JOŠĀ
+   T    > -T,JOŠAS
+   T    > -T,JOŠAI
+   T    > -T,JOŠI
+   T    > -T,JOŠIEM
+   T    > -T,JOŠUS
+   T    > -T,JOŠOS
+   T    > -T,JOŠĀM
+   T    > -T,JOŠĀS
+   T    > -T,JOŠAIS
+   T    > -T,JOŠAJAM
+   T    > -T,JOŠO
+   T    > -T,JOŠAJĀ
+   T    > -T,JOŠAJAI
+   T    > -T,JOŠIE
+   T    > -T,JOŠAJIEM
+   T    > -T,JOŠAJOS
+   T    > -T,JOŠAJĀM
+   T    > -T,JOŠAJĀS
+
+flag *h:
+   [^ĀĒĪ]T    > -T,OŠA
+   [^ĀĒĪ]T    > -T,OŠĀ
+   [^ĀĒĪ]T    > -T,OŠAI
+   [^ĀĒĪ]T    > -T,OŠAIS
+   [^ĀĒĪ]T    > -T,OŠAJĀ
+   [^ĀĒĪ]T    > -T,OŠAJAI
+   [^ĀĒĪ]T    > -T,OŠAJAM
+   [^ĀĒĪ]T    > -T,OŠAJĀM
+   [^ĀĒĪ]T    > -T,OŠAJĀS
+   [^ĀĒĪ]T    > -T,OŠAJIEM
+   [^ĀĒĪ]T    > -T,OŠAJOS
+   [^ĀĒĪ]T    > -T,OŠAM
+   [^ĀĒĪ]T    > -T,OŠĀM
+   [^ĀĒĪ]T    > -T,OŠAS
+   [^ĀĒĪ]T    > -T,OŠĀS
+   [^ĀĒĪ]T    > -T,OŠI
+   [^ĀĒĪ]T    > -T,OŠIE
+   [^ĀĒĪ]T    > -T,OŠIEM
+   [^ĀĒĪ]T    > -T,OŠO
+   [^ĀĒĪ]T    > -T,OŠOS
+   [^ĀĒĪ]T    > -T,OŠS
+   [^ĀĒĪ]T    > -T,OŠU
+   [^ĀĒĪ]T    > -T,OŠUS
+   [Ē]T    > -ĒT,OŠA
+   [Ē]T    > -ĒT,OŠĀ
+   [Ē]T    > -ĒT,OŠAI
+   [Ē]T    > -ĒT,OŠAIS
+   [Ē]T    > -ĒT,OŠAJĀ
+   [Ē]T    > -ĒT,OŠAJAI
+   [Ē]T    > -ĒT,OŠAJAM
+   [Ē]T    > -ĒT,OŠAJĀM
+   [Ē]T    > -ĒT,OŠAJĀS
+   [Ē]T    > -ĒT,OŠAJIEM
+   [Ē]T    > -ĒT,OŠAJOS
+   [Ē]T    > -ĒT,OŠAM
+   [Ē]T    > -ĒT,OŠĀM
+   [Ē]T    > -ĒT,OŠAS
+   [Ē]T    > -ĒT,OŠĀS
+   [Ē]T    > -ĒT,OŠI
+   [Ē]T    > -ĒT,OŠIE
+   [Ē]T    > -ĒT,OŠIEM
+   [Ē]T    > -ĒT,OŠO
+   [Ē]T    > -ĒT,OŠOS
+   [Ē]T    > -ĒT,OŠS
+   [Ē]T    > -ĒT,OŠU
+   [Ē]T    > -ĒT,OŠUS
+   [^CZ][Ī]T    > -ĪT,OŠA
+   [^CZ][Ī]T    > -ĪT,OŠĀ
+   [^CZ][Ī]T    > -ĪT,OŠAI
+   [^CZ][Ī]T    > -ĪT,OŠAIS
+   [^CZ][Ī]T    > -ĪT,OŠAJĀ
+   [^CZ][Ī]T    > -ĪT,OŠAJAI
+   [^CZ][Ī]T    > -ĪT,OŠAJAM
+   [^CZ][Ī]T    > -ĪT,OŠAJĀM
+   [^CZ][Ī]T    > -ĪT,OŠAJĀS
+   [^CZ][Ī]T    > -ĪT,OŠAJIEM
+   [^CZ][Ī]T    > -ĪT,OŠAJOS
+   [^CZ][Ī]T    > -ĪT,OŠAM
+   [^CZ][Ī]T    > -ĪT,OŠĀM
+   [^CZ][Ī]T    > -ĪT,OŠAS
+   [^CZ][Ī]T    > -ĪT,OŠĀS
+   [^CZ][Ī]T    > -ĪT,OŠI
+   [^CZ][Ī]T    > -ĪT,OŠIE
+   [^CZ][Ī]T    > -ĪT,OŠIEM
+   [^CZ][Ī]T    > -ĪT,OŠO
+   [^CZ][Ī]T    > -ĪT,OŠOS
+   [^CZ][Ī]T    > -ĪT,OŠS
+   [^CZ][Ī]T    > -ĪT,OŠU
+   [^CZ][Ī]T    > -ĪT,OŠUS
+   [C]ĪT    > -CĪT,KOŠA
+   [C]ĪT    > -CĪT,KOŠĀ
+   [C]ĪT    > -CĪT,KOŠAI
+   [C]ĪT    > -CĪT,KOŠAIS
+   [C]ĪT    > -CĪT,KOŠAJĀ
+   [C]ĪT    > -CĪT,KOŠAJAI
+   [C]ĪT    > -CĪT,KOŠAJAM
+   [C]ĪT    > -CĪT,KOŠAJĀM
+   [C]ĪT    > -CĪT,KOŠAJĀS
+   [C]ĪT    > -CĪT,KOŠAJIEM
+   [C]ĪT    > -CĪT,KOŠAJOS
+   [C]ĪT    > -CĪT,KOŠAM
+   [C]ĪT    > -CĪT,KOŠĀM
+   [C]ĪT    > -CĪT,KOŠAS
+   [C]ĪT    > -CĪT,KOŠĀS
+   [C]ĪT    > -CĪT,KOŠI
+   [C]ĪT    > -CĪT,KOŠIE
+   [C]ĪT    > -CĪT,KOŠIEM
+   [C]ĪT    > -CĪT,KOŠO
+   [C]ĪT    > -CĪT,KOŠOS
+   [C]ĪT    > -CĪT,KOŠS
+   [C]ĪT    > -CĪT,KOŠU
+   [C]ĪT    > -CĪT,KOŠUS
+   [^D]ZĪT    > -ĪT,OŠA
+   [^D]ZĪT    > -ĪT,OŠĀ
+   [^D]ZĪT    > -ĪT,OŠAI
+   [^D]ZĪT    > -ĪT,OŠAIS
+   [^D]ZĪT    > -ĪT,OŠAJĀ
+   [^D]ZĪT    > -ĪT,OŠAJAI
+   [^D]ZĪT    > -ĪT,OŠAJAM
+   [^D]ZĪT    > -ĪT,OŠAJĀM
+   [^D]ZĪT    > -ĪT,OŠAJĀS
+   [^D]ZĪT    > -ĪT,OŠAJIEM
+   [^D]ZĪT    > -ĪT,OŠAJOS
+   [^D]ZĪT    > -ĪT,OŠAM
+   [^D]ZĪT    > -ĪT,OŠĀM
+   [^D]ZĪT    > -ĪT,OŠAS
+   [^D]ZĪT    > -ĪT,OŠĀS
+   [^D]ZĪT    > -ĪT,OŠI
+   [^D]ZĪT    > -ĪT,OŠIE
+   [^D]ZĪT    > -ĪT,OŠIEM
+   [^D]ZĪT    > -ĪT,OŠO
+   [^D]ZĪT    > -ĪT,OŠOS
+   [^D]ZĪT    > -ĪT,OŠS
+   [^D]ZĪT    > -ĪT,OŠU
+   [^D]ZĪT    > -ĪT,OŠUS
+   [D]ZĪT    > -DZĪT,GOŠA
+   [D]ZĪT    > -DZĪT,GOŠĀ
+   [D]ZĪT    > -DZĪT,GOŠAI
+   [D]ZĪT    > -DZĪT,GOŠAIS
+   [D]ZĪT    > -DZĪT,GOŠAJĀ
+   [D]ZĪT    > -DZĪT,GOŠAJAI
+   [D]ZĪT    > -DZĪT,GOŠAJAM
+   [D]ZĪT    > -DZĪT,GOŠAJĀM
+   [D]ZĪT    > -DZĪT,GOŠAJĀS
+   [D]ZĪT    > -DZĪT,GOŠAJIEM
+   [D]ZĪT    > -DZĪT,GOŠAJOS
+   [D]ZĪT    > -DZĪT,GOŠAM
+   [D]ZĪT    > -DZĪT,GOŠĀM
+   [D]ZĪT    > -DZĪT,GOŠAS
+   [D]ZĪT    > -DZĪT,GOŠĀS
+   [D]ZĪT    > -DZĪT,GOŠI
+   [D]ZĪT    > -DZĪT,GOŠIE
+   [D]ZĪT    > -DZĪT,GOŠIEM
+   [D]ZĪT    > -DZĪT,GOŠO
+   [D]ZĪT    > -DZĪT,GOŠOS
+   [D]ZĪT    > -DZĪT,GOŠS
+   [D]ZĪT    > -DZĪT,GOŠU
+   [D]ZĪT    > -DZĪT,GOŠUS
+   [Ā]T    > -ĀT,OŠA
+   [Ā]T    > -ĀT,OŠĀ
+   [Ā]T    > -ĀT,OŠAI
+   [Ā]T    > -ĀT,OŠAIS
+   [Ā]T    > -ĀT,OŠAJĀ
+   [Ā]T    > -ĀT,OŠAJAI
+   [Ā]T    > -ĀT,OŠAJAM
+   [Ā]T    > -ĀT,OŠAJĀM
+   [Ā]T    > -ĀT,OŠAJĀS
+   [Ā]T    > -ĀT,OŠAJIEM
+   [Ā]T    > -ĀT,OŠAJOS
+   [Ā]T    > -ĀT,OŠAM
+   [Ā]T    > -ĀT,OŠĀM
+   [Ā]T    > -ĀT,OŠAS
+   [Ā]T    > -ĀT,OŠĀS
+   [Ā]T    > -ĀT,OŠI
+   [Ā]T    > -ĀT,OŠIE
+   [Ā]T    > -ĀT,OŠIEM
+   [Ā]T    > -ĀT,OŠO
+   [Ā]T    > -ĀT,OŠOS
+   [Ā]T    > -ĀT,OŠS
+   [Ā]T    > -ĀT,OŠU
+   [Ā]T    > -ĀT,OŠUS
+
+
+#shitas neder 4 grupai
+# - ĀĒ-ae
+flag *%:
+   [^GKR]T    > OŠA
+   [^GKR]T    > OŠĀ
+   [^GKR]T    > OŠAI
+   [^GKR]T    > OŠAIS
+   [^GKR]T    > OŠAJĀ
+   [^GKR]T    > OŠAJAI
+   [^GKR]T    > OŠAJAM
+   [^GKR]T    > OŠAJĀM
+   [^GKR]T    > OŠAJĀS
+   [^GKR]T    > OŠAJIEM
+   [^GKR]T    > OŠAJOS
+   [^GKR]T    > OŠAM
+   [^GKR]T    > OŠĀM
+   [^GKR]T    > OŠAS
+   [^GKR]T    > OŠĀS
+   [^GKR]T    > OŠI
+   [^GKR]T    > OŠIE
+   [^GKR]T    > OŠIEM
+   [^GKR]T    > OŠO
+   [^GKR]T    > OŠOS
+   [^GKR]T    > OŠS
+   [^GKR]T    > OŠU
+   [^GKR]T    > OŠUS
+   [^GKR]T    > AMS
+   [^GKR]T    > AMA
+   [^GKR]T    > AMĀ
+   [^GKR]T    > AMAI
+   [^GKR]T    > AMAIS
+   [^GKR]T    > AMAJĀ
+   [^GKR]T    > AMAJAI
+   [^GKR]T    > AMAJAM
+   [^GKR]T    > AMAJĀM
+   [^GKR]T    > AMAJĀS
+   [^GKR]T    > AMAJIEM
+   [^GKR]T    > AMAJOS
+   [^GKR]T    > AMAM
+   [^GKR]T    > AMĀM
+   [^GKR]T    > AMAS
+   [^GKR]T    > AMĀS
+   [^GKR]T    > AMI
+   [^GKR]T    > AMIE
+   [^GKR]T    > AMIEM
+   [^GKR]T    > AMO
+   [^GKR]T    > AMOS
+   [^GKR]T    > AMU
+   [^GKR]T    > AMUS
+   [^ĀĒ][R]T    > OŠA
+   [^ĀĒ][R]T    > OŠĀ
+   [^ĀĒ][R]T    > OŠAI
+   [^ĀĒ][R]T    > OŠAIS
+   [^ĀĒ][R]T    > OŠAJĀ
+   [^ĀĒ][R]T    > OŠAJAI
+   [^ĀĒ][R]T    > OŠAJAM
+   [^ĀĒ][R]T    > OŠAJĀM
+   [^ĀĒ][R]T    > OŠAJĀS
+   [^ĀĒ][R]T    > OŠAJIEM
+   [^ĀĒ][R]T    > OŠAJOS
+   [^ĀĒ][R]T    > OŠAM
+   [^ĀĒ][R]T    > OŠĀM
+   [^ĀĒ][R]T    > OŠAS
+   [^ĀĒ][R]T    > OŠĀS
+   [^ĀĒ][R]T    > OŠI
+   [^ĀĒ][R]T    > OŠIE
+   [^ĀĒ][R]T    > OŠIEM
+   [^ĀĒ][R]T    > OŠO
+   [^ĀĒ][R]T    > OŠOS
+   [^ĀĒ][R]T    > OŠS
+   [^ĀĒ][R]T    > OŠU
+   [^ĀĒ][R]T    > OŠUS
+   [^ĀĒ][R]T    > AMS
+   [^ĀĒ][R]T    > AMA
+   [^ĀĒ][R]T    > AMĀ
+   [^ĀĒ][R]T    > AMAI
+   [^ĀĒ][R]T    > AMAIS
+   [^ĀĒ][R]T    > AMAJĀ
+   [^ĀĒ][R]T    > AMAJAI
+   [^ĀĒ][R]T    > AMAJAM
+   [^ĀĒ][R]T    > AMAJĀM
+   [^ĀĒ][R]T    > AMAJĀS
+   [^ĀĒ][R]T    > AMAJIEM
+   [^ĀĒ][R]T    > AMAJOS
+   [^ĀĒ][R]T    > AMAM
+   [^ĀĒ][R]T    > AMĀM
+   [^ĀĒ][R]T    > AMAS
+   [^ĀĒ][R]T    > AMĀS
+   [^ĀĒ][R]T    > AMI
+   [^ĀĒ][R]T    > AMIE
+   [^ĀĒ][R]T    > AMIEM
+   [^ĀĒ][R]T    > AMO
+   [^ĀĒ][R]T    > AMOS
+   [^ĀĒ][R]T    > AMU
+   [^ĀĒ][R]T    > AMUS
+   [G]T    > -GT,DZOŠA
+   [G]T    > -GT,DZOŠĀ
+   [G]T    > -GT,DZOŠAI
+   [G]T    > -GT,DZOŠAIS
+   [G]T    > -GT,DZOŠAJĀ
+   [G]T    > -GT,DZOŠAJAI
+   [G]T    > -GT,DZOŠAJAM
+   [G]T    > -GT,DZOŠAJĀM
+   [G]T    > -GT,DZOŠAJĀS
+   [G]T    > -GT,DZOŠAJIEM
+   [G]T    > -GT,DZOŠAJOS
+   [G]T    > -GT,DZOŠAM
+   [G]T    > -GT,DZOŠĀM
+   [G]T    > -GT,DZOŠAS
+   [G]T    > -GT,DZOŠĀS
+   [G]T    > -GT,DZOŠI
+   [G]T    > -GT,DZOŠIE
+   [G]T    > -GT,DZOŠIEM
+   [G]T    > -GT,DZOŠO
+   [G]T    > -GT,DZOŠOS
+   [G]T    > -GT,DZOŠS
+   [G]T    > -GT,DZOŠU
+   [G]T    > -GT,DZOŠUS
+   [G]T    > -GT,DZAMS
+   [G]T    > -GT,DZAMA
+   [G]T    > -GT,DZAMĀ
+   [G]T    > -GT,DZAMAI
+   [G]T    > -GT,DZAMAIS
+   [G]T    > -GT,DZAMAJĀ
+   [G]T    > -GT,DZAMAJAI
+   [G]T    > -GT,DZAMAJAM
+   [G]T    > -GT,DZAMAJĀM
+   [G]T    > -GT,DZAMAJĀS
+   [G]T    > -GT,DZAMAJIEM
+   [G]T    > -GT,DZAMAJOS
+   [G]T    > -GT,DZAMAM
+   [G]T    > -GT,DZAMĀM
+   [G]T    > -GT,DZAMAS
+   [G]T    > -GT,DZAMĀS
+   [G]T    > -GT,DZAMI
+   [G]T    > -GT,DZAMIE
+   [G]T    > -GT,DZAMIEM
+   [G]T    > -GT,DZAMO
+   [G]T    > -GT,DZAMOS
+   [G]T    > -GT,DZAMU
+   [G]T    > -GT,DZAMUS
+   [K]T    > -KT,COŠA
+   [K]T    > -KT,COŠĀ
+   [K]T    > -KT,COŠAI
+   [K]T    > -KT,COŠAIS
+   [K]T    > -KT,COŠAJĀ
+   [K]T    > -KT,COŠAJAI
+   [K]T    > -KT,COŠAJAM
+   [K]T    > -KT,COŠAJĀM
+   [K]T    > -KT,COŠAJĀS
+   [K]T    > -KT,COŠAJIEM
+   [K]T    > -KT,COŠAJOS
+   [K]T    > -KT,COŠAM
+   [K]T    > -KT,COŠĀM
+   [K]T    > -KT,COŠAS
+   [K]T    > -KT,COŠĀS
+   [K]T    > -KT,COŠI
+   [K]T    > -KT,COŠIE
+   [K]T    > -KT,COŠIEM
+   [K]T    > -KT,COŠO
+   [K]T    > -KT,COŠOS
+   [K]T    > -KT,COŠS
+   [K]T    > -KT,COŠU
+   [K]T    > -KT,COŠUS
+   [K]T    > -KT,CAMS
+   [K]T    > -KT,CAMA
+   [K]T    > -KT,CAMĀ
+   [K]T    > -KT,CAMAI
+   [K]T    > -KT,CAMAIS
+   [K]T    > -KT,CAMAJĀ
+   [K]T    > -KT,CAMAJAI
+   [K]T    > -KT,CAMAJAM
+   [K]T    > -KT,CAMAJĀM
+   [K]T    > -KT,CAMAJĀS
+   [K]T    > -KT,CAMAJIEM
+   [K]T    > -KT,CAMAJOS
+   [K]T    > -KT,CAMAM
+   [K]T    > -KT,CAMĀM
+   [K]T    > -KT,CAMAS
+   [K]T    > -KT,CAMĀS
+   [K]T    > -KT,CAMI
+   [K]T    > -KT,CAMIE
+   [K]T    > -KT,CAMIEM
+   [K]T    > -KT,CAMO
+   [K]T    > -KT,CAMOS
+   [K]T    > -KT,CAMU
+   [K]T    > -KT,CAMUS
+   [Ā]RT    > -ĀRT,AROŠA
+   [Ā]RT    > -ĀRT,AROŠĀ
+   [Ā]RT    > -ĀRT,AROŠAI
+   [Ā]RT    > -ĀRT,AROŠAIS
+   [Ā]RT    > -ĀRT,AROŠAJĀ
+   [Ā]RT    > -ĀRT,AROŠAJAI
+   [Ā]RT    > -ĀRT,AROŠAJAM
+   [Ā]RT    > -ĀRT,AROŠAJĀM
+   [Ā]RT    > -ĀRT,AROŠAJĀS
+   [Ā]RT    > -ĀRT,AROŠAJIEM
+   [Ā]RT    > -ĀRT,AROŠAJOS
+   [Ā]RT    > -ĀRT,AROŠAM
+   [Ā]RT    > -ĀRT,AROŠĀM
+   [Ā]RT    > -ĀRT,AROŠAS
+   [Ā]RT    > -ĀRT,AROŠĀS
+   [Ā]RT    > -ĀRT,AROŠI
+   [Ā]RT    > -ĀRT,AROŠIE
+   [Ā]RT    > -ĀRT,AROŠIEM
+   [Ā]RT    > -ĀRT,AROŠO
+   [Ā]RT    > -ĀRT,AROŠOS
+   [Ā]RT    > -ĀRT,AROŠS
+   [Ā]RT    > -ĀRT,AROŠU
+   [Ā]RT    > -ĀRT,AROŠUS
+   [Ā]RT    > -ĀRT,ARAMS
+   [Ā]RT    > -ĀRT,ARAMA
+   [Ā]RT    > -ĀRT,ARAMĀ
+   [Ā]RT    > -ĀRT,ARAMAI
+   [Ā]RT    > -ĀRT,ARAMAIS
+   [Ā]RT    > -ĀRT,ARAMAJĀ
+   [Ā]RT    > -ĀRT,ARAMAJAI
+   [Ā]RT    > -ĀRT,ARAMAJAM
+   [Ā]RT    > -ĀRT,ARAMAJĀM
+   [Ā]RT    > -ĀRT,ARAMAJĀS
+   [Ā]RT    > -ĀRT,ARAMAJIEM
+   [Ā]RT    > -ĀRT,ARAMAJOS
+   [Ā]RT    > -ĀRT,ARAMAM
+   [Ā]RT    > -ĀRT,ARAMĀM
+   [Ā]RT    > -ĀRT,ARAMAS
+   [Ā]RT    > -ĀRT,ARAMĀS
+   [Ā]RT    > -ĀRT,ARAMI
+   [Ā]RT    > -ĀRT,ARAMIE
+   [Ā]RT    > -ĀRT,ARAMIEM
+   [Ā]RT    > -ĀRT,ARAMO
+   [Ā]RT    > -ĀRT,ARAMOS
+   [Ā]RT    > -ĀRT,ARAMU
+   [Ā]RT    > -ĀRT,ARAMUS
+   [Ē]RT    > -ĒRT,EROŠA
+   [Ē]RT    > -ĒRT,EROŠĀ
+   [Ē]RT    > -ĒRT,EROŠAI
+   [Ē]RT    > -ĒRT,EROŠAIS
+   [Ē]RT    > -ĒRT,EROŠAJĀ
+   [Ē]RT    > -ĒRT,EROŠAJAI
+   [Ē]RT    > -ĒRT,EROŠAJAM
+   [Ē]RT    > -ĒRT,EROŠAJĀM
+   [Ē]RT    > -ĒRT,EROŠAJĀS
+   [Ē]RT    > -ĒRT,EROŠAJIEM
+   [Ē]RT    > -ĒRT,EROŠAJOS
+   [Ē]RT    > -ĒRT,EROŠAM
+   [Ē]RT    > -ĒRT,EROŠĀM
+   [Ē]RT    > -ĒRT,EROŠAS
+   [Ē]RT    > -ĒRT,EROŠĀS
+   [Ē]RT    > -ĒRT,EROŠI
+   [Ē]RT    > -ĒRT,EROŠIE
+   [Ē]RT    > -ĒRT,EROŠIEM
+   [Ē]RT    > -ĒRT,EROŠO
+   [Ē]RT    > -ĒRT,EROŠOS
+   [Ē]RT    > -ĒRT,EROŠS
+   [Ē]RT    > -ĒRT,EROŠU
+   [Ē]RT    > -ĒRT,EROŠUS
+   [Ē]RT    > -ĒRT,ERAMS
+   [Ē]RT    > -ĒRT,ERAMA
+   [Ē]RT    > -ĒRT,ERAMĀ
+   [Ē]RT    > -ĒRT,ERAMAI
+   [Ē]RT    > -ĒRT,ERAMAIS
+   [Ē]RT    > -ĒRT,ERAMAJĀ
+   [Ē]RT    > -ĒRT,ERAMAJAI
+   [Ē]RT    > -ĒRT,ERAMAJAM
+   [Ē]RT    > -ĒRT,ERAMAJĀM
+   [Ē]RT    > -ĒRT,ERAMAJĀS
+   [Ē]RT    > -ĒRT,ERAMAJIEM
+   [Ē]RT    > -ĒRT,ERAMAJOS
+   [Ē]RT    > -ĒRT,ERAMAM
+   [Ē]RT    > -ĒRT,ERAMĀM
+   [Ē]RT    > -ĒRT,ERAMAS
+   [Ē]RT    > -ĒRT,ERAMĀS
+   [Ē]RT    > -ĒRT,ERAMI
+   [Ē]RT    > -ĒRT,ERAMIE
+   [Ē]RT    > -ĒRT,ERAMIEM
+   [Ē]RT    > -ĒRT,ERAMO
+   [Ē]RT    > -ĒRT,ERAMOS
+   [Ē]RT    > -ĒRT,ERAMU
+   [Ē]RT    > -ĒRT,ERAMUS
+
+#
+#Divdabji is/usi // uŠais/usĪ
+#
+flag *e:
+   T    > -T,IS
+   T    > -T,UŠA
+   T    > -T,UŠAM
+   T    > -T,UŠU
+   T    > -T,UŠĀ
+   T    > -T,USI
+   T    > -T,UŠAS
+   T    > -T,UŠAI
+   T    > -T,UŠI
+   T    > -T,UŠIEM
+   T    > -T,UŠUS
+   T    > -T,UŠOS
+   T    > -T,UŠĀM
+   T    > -T,UŠĀS
+   T    > -T,UŠAIS
+   T    > -T,UŠAJAM
+   T    > -T,UŠO
+   T    > -T,UŠAJĀ
+   T    > -T,USĪ
+   T    > -T,UŠAJAI
+   T    > -T,UŠIE
+   T    > -T,UŠAJIEM
+   T    > -T,UŠAJOS
+   T    > -T,UŠAJĀM
+   T    > -T,UŠAJĀS
+
+
+#arĪ Īt - no V grupas
+flag *a:
+   [^GĪKLŪ]T    > -T,IS
+   [^LŪĪ]T    > -T,UŠA
+   [^LŪĪ]T    > -T,UŠAM
+   [^LŪĪ]T    > -T,UŠU
+   [^LŪĪ]T    > -T,UŠĀ
+   [^LŪĪ]T    > -T,USI
+   [^LŪĪ]T    > -T,UŠAS
+   [^LŪĪ]T    > -T,UŠAI
+   [^LŪĪ]T    > -T,UŠI
+   [^LŪĪ]T    > -T,UŠIEM
+   [^LŪĪ]T    > -T,UŠUS
+   [^LŪĪ]T    > -T,UŠOS
+   [^LŪĪ]T    > -T,UŠĀM
+   [^LŪĪ]T    > -T,UŠĀS
+   [^LŪĪ]T    > -T,UŠAIS
+   [^LŪĪ]T    > -T,UŠAJAM
+   [^LŪĪ]T    > -T,UŠO
+   [^LŪĪ]T    > -T,UŠAJĀ
+   [^LŪĪ]T    > -T,USĪ
+   [^LŪĪ]T    > -T,UŠAJAI
+   [^LŪĪ]T    > -T,UŠIE
+   [^LŪĪ]T    > -T,UŠAJIEM
+   [^LŪĪ]T    > -T,UŠAJOS
+   [^LŪĪ]T    > -T,UŠAJĀM
+   [^LŪĪ]T    > -T,UŠAJĀS
+   [K]T    > -KT,CIS
+   [G]T    > -GT,DZIS
+   [Ū]T    > -ŪT,UVIS
+   [Ū]T    > -ŪT,UVUŠA
+   [Ū]T    > -ŪT,UVUŠAM
+   [Ū]T    > -ŪT,UVUŠU
+   [Ū]T    > -ŪT,UVUŠĀ
+   [Ū]T    > -ŪT,UVUSI
+   [Ū]T    > -ŪT,UVUŠAS
+   [Ū]T    > -ŪT,UVUŠAI
+   [Ū]T    > -ŪT,UVUŠI
+   [Ū]T    > -ŪT,UVUŠIEM
+   [Ū]T    > -ŪT,UVUŠUS
+   [Ū]T    > -ŪT,UVUŠOS
+   [Ū]T    > -ŪT,UVUŠĀM
+   [Ū]T    > -ŪT,UVUŠĀS
+   [Ū]T    > -ŪT,UVUŠAIS
+   [Ū]T    > -ŪT,UVUŠAJAM
+   [Ū]T    > -ŪT,UVUŠO
+   [Ū]T    > -ŪT,UVUŠAJĀ
+   [Ū]T    > -ŪT,UVUSĪ
+   [Ū]T    > -ŪT,UVUŠAJAI
+   [Ū]T    > -ŪT,UVUŠIE
+   [Ū]T    > -ŪT,UVUŠAJIEM
+   [Ū]T    > -ŪT,UVUŠAJOS
+   [Ū]T    > -ŪT,UVUŠAJĀM
+   [Ū]T    > -ŪT,UVUŠAJĀS
+   [Ī]T    > -ĪT,INIS
+   [Ī]T    > -ĪT,INUŠA
+   [Ī]T    > -ĪT,INUŠAM
+   [Ī]T    > -ĪT,INUŠU
+   [Ī]T    > -ĪT,INUŠĀ
+   [Ī]T    > -ĪT,INUSI
+   [Ī]T    > -ĪT,INUŠAS
+   [Ī]T    > -ĪT,INUŠAI
+   [Ī]T    > -ĪT,INUŠI
+   [Ī]T    > -ĪT,INUŠIEM
+   [Ī]T    > -ĪT,INUŠUS
+   [Ī]T    > -ĪT,INUŠOS
+   [Ī]T    > -ĪT,INUŠĀM
+   [Ī]T    > -ĪT,INUŠĀS
+   [Ī]T    > -ĪT,INUŠAIS
+   [Ī]T    > -ĪT,INUŠAJAM
+   [Ī]T    > -ĪT,INUŠO
+   [Ī]T    > -ĪT,INUŠAJĀ
+   [Ī]T    > -ĪT,INUSĪ
+   [Ī]T    > -ĪT,INUŠAJAI
+   [Ī]T    > -ĪT,INUŠIE
+   [Ī]T    > -ĪT,INUŠAJIEM
+   [Ī]T    > -ĪT,INUŠAJOS
+   [Ī]T    > -ĪT,INUŠAJĀM
+   [Ī]T    > -ĪT,INUŠAJĀS
+   [^EIU]LT    > -T,IS
+   [^EIU]LT    > -T,UŠA
+   [^EIU]LT    > -T,UŠAM
+   [^EIU]LT    > -T,UŠU
+   [^EIU]LT    > -T,UŠĀ
+   [^EIU]LT    > -T,USI
+   [^EIU]LT    > -T,UŠAS
+   [^EIU]LT    > -T,UŠAI
+   [^EIU]LT    > -T,UŠI
+   [^EIU]LT    > -T,UŠIEM
+   [^EIU]LT    > -T,UŠUS
+   [^EIU]LT    > -T,UŠOS
+   [^EIU]LT    > -T,UŠĀM
+   [^EIU]LT    > -T,UŠĀS
+   [^EIU]LT    > -T,UŠAIS
+   [^EIU]LT    > -T,UŠAJAM
+   [^EIU]LT    > -T,UŠO
+   [^EIU]LT    > -T,UŠAJĀ
+   [^EIU]LT    > -T,USĪ
+   [^EIU]LT    > -T,UŠAJAI
+   [^EIU]LT    > -T,UŠIE
+   [^EIU]LT    > -T,UŠAJIEM
+   [^EIU]LT    > -T,UŠAJOS
+   [^EIU]LT    > -T,UŠAJĀM
+   [^EIU]LT    > -T,UŠAJĀS
+   [E]LT    > -ELT,ĒLIS
+   [E]LT    > -ELT,ĒLUŠA
+   [E]LT    > -ELT,ĒLUŠAM
+   [E]LT    > -ELT,ĒLUŠU
+   [E]LT    > -ELT,ĒLUŠĀ
+   [E]LT    > -ELT,ĒLUSI
+   [E]LT    > -ELT,ĒLUŠAS
+   [E]LT    > -ELT,ĒLUŠAI
+   [E]LT    > -ELT,ĒLUŠI
+   [E]LT    > -ELT,ĒLUŠIEM
+   [E]LT    > -ELT,ĒLUŠUS
+   [E]LT    > -ELT,ĒLUŠOS
+   [E]LT    > -ELT,ĒLUŠĀM
+   [E]LT    > -ELT,ĒLUŠĀS
+   [E]LT    > -ELT,ĒLUŠAIS
+   [E]LT    > -ELT,ĒLUŠAJAM
+   [E]LT    > -ELT,ĒLUŠO
+   [E]LT    > -ELT,ĒLUŠAJĀ
+   [E]LT    > -ELT,ĒLUSĪ
+   [E]LT    > -ELT,ĒLUŠAJAI
+   [E]LT    > -ELT,ĒLUŠIE
+   [E]LT    > -ELT,ĒLUŠAJIEM
+   [E]LT    > -ELT,ĒLUŠAJOS
+   [E]LT    > -ELT,ĒLUŠAJĀM
+   [E]LT    > -ELT,ĒLUŠAJĀS
+   [I]LT    > -ILT,ĪLIS
+   [I]LT    > -ILT,ĪLUŠA
+   [I]LT    > -ILT,ĪLUŠAM
+   [I]LT    > -ILT,ĪLUŠU
+   [I]LT    > -ILT,ĪLUŠĀ
+   [I]LT    > -ILT,ĪLUSI
+   [I]LT    > -ILT,ĪLUŠAS
+   [I]LT    > -ILT,ĪLUŠAI
+   [I]LT    > -ILT,ĪLUŠI
+   [I]LT    > -ILT,ĪLUŠIEM
+   [I]LT    > -ILT,ĪLUŠUS
+   [I]LT    > -ILT,ĪLUŠOS
+   [I]LT    > -ILT,ĪLUŠĀM
+   [I]LT    > -ILT,ĪLUŠĀS
+   [I]LT    > -ILT,ĪLUŠAIS
+   [I]LT    > -ILT,ĪLUŠAJAM
+   [I]LT    > -ILT,ĪLUŠO
+   [I]LT    > -ILT,ĪLUŠAJĀ
+   [I]LT    > -ILT,ĪLUSĪ
+   [I]LT    > -ILT,ĪLUŠAJAI
+   [I]LT    > -ILT,ĪLUŠIE
+   [I]LT    > -ILT,ĪLUŠAJIEM
+   [I]LT    > -ILT,ĪLUŠAJOS
+   [I]LT    > -ILT,ĪLUŠAJĀM
+   [I]LT    > -ILT,ĪLUŠAJĀS
+   [U]LT    > -ULT,ŪLIS
+   [U]LT    > -ULT,ŪLUŠA
+   [U]LT    > -ULT,ŪLUŠAM
+   [U]LT    > -ULT,ŪLUŠU
+   [U]LT    > -ULT,ŪLUŠĀ
+   [U]LT    > -ULT,ŪLUSI
+   [U]LT    > -ULT,ŪLUŠAS
+   [U]LT    > -ULT,ŪLUŠAI
+   [U]LT    > -ULT,ŪLUŠI
+   [U]LT    > -ULT,ŪLUŠIEM
+   [U]LT    > -ULT,ŪLUŠUS
+   [U]LT    > -ULT,ŪLUŠOS
+   [U]LT    > -ULT,ŪLUŠĀM
+   [U]LT    > -ULT,ŪLUŠĀS
+   [U]LT    > -ULT,ŪLUŠAIS
+   [U]LT    > -ULT,ŪLUŠAJAM
+   [U]LT    > -ULT,ŪLUŠO
+   [U]LT    > -ULT,ŪLUŠAJĀ
+   [U]LT    > -ULT,ŪLUSĪ
+   [U]LT    > -ULT,ŪLUŠAJAI
+   [U]LT    > -ULT,ŪLUŠIE
+   [U]LT    > -ULT,ŪLUŠAJIEM
+   [U]LT    > -ULT,ŪLUŠAJOS
+   [U]LT    > -ULT,ŪLUŠAJĀM
+   [U]LT    > -ULT,ŪLUŠAJĀS
+
+flag *b:
+   T    > -T,JIS
+   T    > -T,JUŠA
+   T    > -T,JUŠAM
+   T    > -T,JUŠU
+   T    > -T,JUŠĀ
+   T    > -T,JUSI
+   T    > -T,JUŠAS
+   T    > -T,JUŠAI
+   T    > -T,JUŠI
+   T    > -T,JUŠIEM
+   T    > -T,JUŠUS
+   T    > -T,JUŠOS
+   T    > -T,JUŠĀM
+   T    > -T,JUŠĀS
+   T    > -T,JUŠAIS
+   T    > -T,JUŠAJAM
+   T    > -T,JUŠO
+   T    > -T,JUŠAJĀ
+   T    > -T,JUSĪ
+   T    > -T,JUŠAJAI
+   T    > -T,JUŠIE
+   T    > -T,JUŠAJIEM
+   T    > -T,JUŠAJOS
+   T    > -T,JUŠAJĀM
+   T    > -T,JUŠAJĀS
+
+flag *I:
+   T    > -T,TS
+   T    > -T,TA
+   T    > -T,TAI
+   T    > -T,TAIS
+   T    > -T,TAJAI
+   T    > -T,TAJAM
+   T    > -T,TAJIEM
+   T    > -T,TAJOS
+   T    > -T,TAJĀ
+   T    > -T,TAJĀM
+   T    > -T,TAJĀS
+   T    > -T,TAM
+   T    > -T,TAS
+   T    > -T,TI
+   T    > -T,TIE
+   T    > -T,TIEM
+   T    > -T,TO
+   T    > -T,TOS
+   T    > -T,TUS
+   T    > -T,TĀ
+   T    > -T,TĀM
+   T    > -T,TĀS
+   T    > -T,TU
+
+flag *0:
+   T    > U
+
+flag *J:
+   [^SZ]T    > -T,ŠANA
+   [^SZ]T    > -T,ŠANAS
+   [^SZ]T    > -T,ŠANAI
+   [^SZ]T    > -T,ŠANU
+   [^SZ]T    > -T,ŠANĀ
+   [^SZ]T    > -T,ŠANĀS
+   [^SZ]T    > -T,ŠANĀM
+   [S]T    > -ST,ŠANA
+   [S]T    > -ST,ŠANAS
+   [S]T    > -ST,ŠANAI
+   [S]T    > -ST,ŠANU
+   [S]T    > -ST,ŠANĀ
+   [S]T    > -ST,ŠANĀS
+   [S]T    > -ST,ŠANĀM
+   [Z]T    > -ZT,ŠANA
+   [Z]T    > -ZT,ŠANAS
+   [Z]T    > -ZT,ŠANAI
+   [Z]T    > -ZT,ŠANU
+   [Z]T    > -ZT,ŠANĀ
+   [Z]T    > -ZT,ŠANĀS
+   [Z]T    > -ZT,ŠANĀM
+
+
+flag *d:
+   T    > IES   # IIk refl
+   [^SZ]T    > -T,ŠOS     #NĀkotne refleksĪvajiem
+   [^SZ]T    > -T,SIES     #2, 3 p.
+   [^SZ]T    > -T,SIMIES
+   [^SZ]T    > -T,SIETIES
+   [^SZ]T    > -T,SITIES
+   [Z]T    > -T,ĪŠOS
+   [Z]T    > -T,ĪSIES
+   [Z]T    > -T,ĪSIMIES
+   [Z]T    > -T,ĪSIETIES
+   [Z]T    > -T,ĪSITIES
+   [S]T    > -ST,TĪŠOS     #domĀjams, ka atbilst Ik st 
+   [S]T    > -ST,TĪSIES     #galotŅu ĪpaŠnieku vĒlmĒm
+   [S]T    > -ST,TĪSIMIES
+   [S]T    > -ST,TĪSIETIES
+   [S]T    > -ST,TĪSITIES     # --- beigas nĀkotnei
+
+flag *g:
+   [ĀĒĪOŪ]T    > -T,JOS    #--- pagĀtne -----
+   [ĀĒĪOŪ]T    > -T,JIES
+   [ĀĒĪOŪ]T    > -T,JĀS
+   [ĀĒĪOŪ]T    > -T,JĀMIES
+   [ĀĒĪOŪ]T    > -T,JĀTIES    #--- beigas pagĀtnei
+   [ĀĒĪOŪ]T    > OS    #cieŠamĀ kĀrta
+   [ĀĒĪOŪ]T    > -T,ŠOTIES    #atst.izt.v.nak.
+
+# I konj. I grupas tagadne
+flag *8:
+   T    > -T,U           # I vsk
+   [^GK]T    > -T,I      # II vsk
+   [G]T    > -GT,DZ        # II vsk
+   [K]T    > -KT,C        # II vsk
+   T    > -T,           # III vsk
+   T    > -T,AM           # I dsk
+   T    > -T,AT           # II dsk
+   [^GK]T    > -T,IET      # pav.dsk
+   [G]T    > -GT,DZIET        # pav. dsk
+   [K]T    > -KT,CIET        # pav.dsk
+   T    > -T,OT           # II dsk
+
+flag *O:
+   [S]    > -S,A    #Ģenitivs vsk
+   [S]    > -S,AM    #datĪvs vsk
+   [S]    > -S,U    #akuzatĪvs un instrum.
+   [S]    > -S,Ā    #lokatĪvs vsk
+   [S]    > -S,    #vokatĪvs vsk
+   [Š]    > -Š,A    #Ģenitivs vsk
+   [Š]    > -Š,AM    #dativs vsk
+   [Š]    > -Š,U    #akuzativs un instrum.
+   [Š]    > -Š,Ā    #lokativs vsk
+
+#lietvĀrdi I.deklinĀcija - galds, vĒjŠ, dsk.
+flag *i:
+   [S]    > -S,I    #nominatĪvs
+   [S]    > -S,IEM    #datĪvs
+   [S]    > -S,US    #akuzatĪvs
+   [S]    > -S,OS    #lokatĪvs
+   [Š]    > -Š,I    #nominativs
+   [Š]    > -Š,IEM    #datĪvs
+   [Š]    > -Š,US    #akuzativs
+   [Š]    > -Š,OS    #lokatĪvs
+
+flag *t:
+   [^GK]S    > -S,IŅ    #vokatĪvs
+   [G]S    > -GS,DZIŅ      #vokatĪvs
+   [K]S    > -KS,CIŅ      #vokatĪvs
+   [^GK]S    > -S,IŅŠ    #viensk. nom.
+   [^GK]S    > -S,IŅA    #ĢenitĪvs, d. nom.
+   [^GK]S    > -S,IŅAM    #dativs
+   [^GK]S    > -S,IŅU    #akuzativs, instr, d.Ģen.,
+   [^GK]S    > -S,IŅĀ    #lokativs
+   [G]S    > -GS,DZIŅŠ    #viensk. nom. - zirgs-zirdziŅŠ
+   [G]S    > -GS,DZIŅA    #ĢenitĪvs, d. nom.
+   [G]S    > -GS,DZIŅAM    #dativs
+   [G]S    > -GS,DZIŅU    #akuzativs, instr, d.Ģen.,
+   [G]S    > -GS,DZIŅĀ    #lokativs
+   [K]S    > -KS,CIŅŠ    #viensk. nom. spoks-spociŅŠ
+   [K]S    > -KS,CIŅA    #ĢenitĪvs, d. nom.
+   [K]S    > -KS,CIŅAM    #dativs
+   [K]S    > -KS,CIŅU    #akuzativs, instr, d.Ģen.,
+   [K]S    > -KS,CIŅĀ    #lokativs
+   [Š]    > -Š,IŅŠ     #viensk. nom.
+   [Š]    > -Š,IŅA     #ĢenitĪvs, d. nom.
+   [Š]    > -Š,IŅAM     #dativs
+   [Š]    > -Š,IŅU     #akuzativs, instr, d.Ģen.,
+   [Š]    > -Š,IŅĀ     #lokativs
+   [Š]    > -Š,IŅ     #vokatĪvs
+
+#lietvĀrdi I.deklinĀcija - galds, vĒjŠ, pamaz. dsk.
+flag *v:
+   [^GK]S    > -S,IŅI    #dsk. nom.
+   [^GK]S    > -S,IŅUS    #dsk. akuzativs,.
+   [^GK]S    > -S,IŅIEM    #dativs, instr
+   [^GK]S    > -S,IŅOS    #lokativs
+   [G]S    > -GS,DZIŅI    #dsk. nom.
+   [G]S    > -GS,DZIŅUS    #dsk. akuzativs,.
+   [G]S    > -GS,DZIŅIEM    #dativs, instr
+   [G]S    > -GS,DZIŅOS    #lokativs
+   [K]S    > -KS,CIŅI    #dsk. nom.
+   [K]S    > -KS,CIŅUS    #dsk. akuzativs,.
+   [K]S    > -KS,CIŅIEM    #dativs, instr
+   [K]S    > -KS,CIŅOS    #lokativs
+   [Š]    > -Š,IŅI     #dsk. nom.
+   [Š]    > -Š,IŅUS     #dsk. akuzativs
+   [Š]    > -Š,IŅIEM     #dativs, instr
+   [Š]    > -Š,IŅOS     #lokativs
+
+flag *P:
+   [^BCDLMNPVTSZ]IS    > -IS,A  #ĢenitĪvs
+   [BPMV]IS    > -IS,JA
+   [C]IS    > -CIS,ČA
+   [D]IS    > -DIS,žA
+   [S]IS    > -SIS,ŠA
+   [^A][T]IS    > -TIS,ŠA
+   [A][T]IS    > -IS,A      #Ģen. tĀlskatis piem.
+   [Z]IS    > -ZIS,žA
+   [^LSZ][N]IS    > -NIS,ŅA
+   [^LSZ][L]IS    > -LIS,ĻA
+   [L]NIS    > -LNIS,ĻŅA
+   [S]NIS    > -SNIS,ŠŅA
+   [Z]NIS    > -ZNIS,žŅA
+   [L]LIS    > -LLIS,ĻĻA
+   [S]LIS    > -SLIS,ŠĻA
+   [Z]LIS    > -ZLIS,žĻA
+   [I]S    > -S,M        #datĪvs
+   [I]S    > -S,        #akuzatĪvs, instrumentĀlis
+   [I]S    > -IS,Ī        #lokatĪvs
+   [LNS]S    > -S,IM      #dat suns, mĒness
+   [LNS]S    > -S,I      #akk, instr vsk suns
+   [LNS]S    > -S,Ī      #lok
+
+#lietvĀrdi II.deklinĀcija dsk.
+flag *j:
+   [BPMV]IS    > -IS,JI   #dsk nominatĪvs
+   [ĢRĶ]IS    > -IS,I
+   [^A][T]IS    > -TIS,ŠI
+   [A][T]IS    > -IS,I     #tĀlskatis
+   [C]IS    > -CIS,ČI
+   [D]IS    > -DIS,žI
+   [Z]IS    > -ZIS,žI
+   [S]IS    > -SIS,ŠI
+   [^LSZ][N]IS    > -NIS,ŅI
+   [^LSZ][L]IS    > -LIS,ĻI
+   [L]NIS    > -LNIS,ĻŅI
+   [S]NIS    > -SNIS,ŠŅI
+   [Z]NIS    > -ZNIS,žŅI
+   [L]LIS    > -LLIS,ĻĻI
+   [S]LIS    > -SLIS,ŠĻI
+   [Z]LIS    > -ZLIS,žĻI
+   [N]S    > -NS,ŅI         #suŅi
+   [BPMV]IS    > -IS,JU   #dsk ĢenitĪvs
+   [ĢRĶ]IS    > -IS,U
+   [^A][T]IS    > -TIS,ŠU
+   [A][T]IS    > -IS,U     #tĀlskatis
+   [C]IS    > -CIS,ČU
+   [D]IS    > -DIS,žU
+   [Z]IS    > -ZIS,žU
+   [S]IS    > -SIS,ŠU
+   [^LSZ][N]IS    > -NIS,ŅU
+   [^LSZ][L]IS    > -LIS,ĻU
+   [L]NIS    > -LNIS,ĻŅU
+   [S]NIS    > -SNIS,ŠŅU
+   [Z]NIS    > -ZNIS,žŅU
+   [L]LIS    > -LLIS,ĻĻU
+   [S]LIS    > -SLIS,ŠĻU
+   [Z]LIS    > -ZLIS,žĻU
+   [N]S    > -NS,ŅU          #suŅu
+   [BPMV]IS    > -IS,JIEM   #dsk datĪvs, instrumentĀlis
+   [ĢRĶ]IS    > -S,EM
+   [^A][T]IS    > -TIS,ŠIEM
+   [A][T]IS    > -IS,IEM      #tĀlskatis
+   [C]IS    > -CIS,ČIEM
+   [D]IS    > -DIS,žIEM
+   [Z]IS    > -ZIS,žIEM
+   [S]IS    > -SIS,ŠIEM
+   [^LSZ][N]IS    > -NIS,ŅIEM
+   [^LSZ][L]IS    > -LIS,ĻIEM
+   [L]NIS    > -LNIS,ĻŅIEM
+   [S]NIS    > -SNIS,ŠŅIEM
+   [Z]NIS    > -ZNIS,žŅIEM
+   [L]LIS    > -LLIS,ĻĻIEM
+   [S]LIS    > -SLIS,ŠĻIEM
+   [Z]LIS    > -ZLIS,žĻIEM
+   [N]S    > -NS,ŅIEM         #suŅiem
+   [BPMV]IS    > -IS,JUS   #dsk akuzatĪvs
+   [ĢRĶ]IS    > -IS,US
+   [^A][T]IS    > -TIS,ŠUS
+   [A][T]IS    > -IS,US     #tĀlskatis
+   [C]IS    > -CIS,ČUS
+   [D]IS    > -DIS,žUS
+   [Z]IS    > -ZIS,žUS
+   [S]IS    > -SIS,ŠUS
+   [^LSZ][N]IS    > -NIS,ŅUS
+   [^LSZ][L]IS    > -LIS,ĻUS
+   [L]NIS    > -LNIS,ĻŅUS
+   [S]NIS    > -SNIS,ŠŅUS
+   [Z]NIS    > -ZNIS,žŅUS
+   [L]LIS    > -LLIS,ĻĻUS
+   [S]LIS    > -SLIS,ŠĻUS
+   [Z]LIS    > -ZLIS,žĻUS
+   [N]S    > -NS,ŅUS        #suŅus
+   [BPMV]IS    > -IS,JOS  #dsk lokatĪvs
+   [ĢRĶ]IS    > -IS,OS
+   [^A][T]IS    > -TIS,ŠOS
+   [A][T]IS    > -IS,OS    #tĀlskatis
+   [C]IS    > -CIS,ČOS
+   [D]IS    > -DIS,žOS
+   [Z]IS    > -ZIS,žOS
+   [S]IS    > -SIS,ŠOS
+   [^LSZ][N]IS    > -NIS,ŅOS
+   [^LSZ][L]IS    > -LIS,ĻOS
+   [L]NIS    > -LNIS,ĻŅOS
+   [S]NIS    > -SNIS,ŠŅOS
+   [Z]NIS    > -ZNIS,žŅOS
+   [L]LIS    > -LLIS,ĻĻOS
+   [S]LIS    > -SLIS,ŠĻOS
+   [Z]LIS    > -ZLIS,žĻOS
+   [N]S    > -NS,ŅOS       #suŅos
+
+flag *u:
+   [I]S    > -IS,ĪTIS      #viensk. nom.
+   [I]S    > -IS,ĪŠA      #v. ĢenitĪvs, d. nom.
+   [I]S    > -IS,ĪTIM      #v. dativs
+   [I]S    > -IS,ĪTI      #v. akuzativs, instr,
+   [I]S    > -IS,ĪTĪ      #v. lokativs
+   [I]S    > -IS,ĪT      #v. vokativs
+
+flag *w:
+   [I]S    > -IS,ĪŠI      #viensk. nom.
+   [I]S    > -IS,ĪŠU      #d. ĢenitĪvs,
+   [I]S    > -IS,ĪŠIEM      #d. dativs, d. instr.
+   [I]S    > -IS,ĪŠUS      #d. akuzativs
+   [I]S    > -IS,ĪŠOS      #d. lokatĪvs
+
+flag *Q:
+   [U]S    > -S,M
+   [U]S    > -S,
+   [S]    > -US,Ū
+
+#lietvĀrdi III deklinĀcija dsk.
+flag *k:
+   [S]    > -US,I
+   [S]    > -US,IEM
+   [S]    > -US,OS
+
+#lietvĀrdi IV.deklinĀcija - sala
+#nouns, 4th declination, fem.
+flag *R:
+   A    > S
+   A    > I
+   A    > -A,U
+   A    > -A,Ā
+
+#lietvĀrdi IV.deklinĀcija dsk.
+flag *l:
+   A    > -A,ĀM
+   A    > -A,ĀS
+
+flag *r:
+   [^GK]A    > -A,IŅA
+   [^GK]A    > -A,IŅAS
+   [^GK]A    > -A,IŅAI
+   [^GK]A    > -A,IŅU
+   [^GK]A    > -A,IŅĀ
+   [G]A    > -GA,DZIŅA
+   [G]A    > -GA,DZIŅAS
+   [G]A    > -GA,DZIŅAI
+   [G]A    > -GA,DZIŅU
+   [G]A    > -GA,DZIŅĀ
+   [^S]KA    > -KA,CIŅA
+   [^S]KA    > -KA,CIŅAS
+   [^S]KA    > -KA,CIŅAI
+   [^S]KA    > -KA,CIŅU
+   [^S]KA    > -KA,CIŅĀ
+   [S]KA    > -A,IŅA
+   [S]KA    > -A,IŅAS
+   [S]KA    > -A,IŅAI
+   [S]KA    > -A,IŅU
+   [S]KA    > -A,IŅĀ
+
+
+#lietvĀrdi IV.deklinĀcija dsk.
+flag *x:
+   [^GK]A    > -A,IŅĀM
+   [^GK]A    > -A,IŅĀS
+   [G]A    > -GA,DZIŅĀM
+   [G]A    > -GA,DZIŅĀS
+   [^S]KA    > -KA,CIŅĀM
+   [^S]KA    > -KA,CIŅĀS
+   [S]KA    > -A,IŅĀM
+   [S]KA    > -A,IŅĀS
+
+flag *S:
+   E    > S
+   [E]    > I
+   [E]    > -E,I
+   [E]    > -E,Ē
+
+#Vd dsk.
+flag *m:
+   [^BCDLMNPSTVZ]E    > -E,U
+   [BMPV]E    > -E,JU
+   [C]E    > -CE,ČU
+   [D]E    > -DE,žU
+   [^L]LE    > -LE,ĻU
+   [L]LE    > -LLE,ĻĻU
+   [^SZ][N]E    > -NE,ŅU
+   [S]NE    > -SNE,ŠŅU
+   [Z]NE    > -ZNE,žŅU
+   [S]E    > -SE,ŠU
+   [^S]TE    > -TE,ŠU
+   [^K]STE    > -TE,TU
+   [K]STE    > -STE,ŠU
+   [Z]E    > -ZE,žU
+   [E]    > -E,ĒM
+   [E]    > -E,ĒS
+
+#Vd-pamaz. vsk.
+flag *s:
+   [E]    > -E,ĪTE
+   [E]    > -E,ĪTES
+   [E]    > -E,ĪTEI
+   [E]    > -E,ĪTI
+   [E]    > -E,ĪTĒ
+
+#Vd pamaz. dsk.
+flag *f:
+   [E]    > -E,ĪŠU
+   [E]    > -E,ĪTĒM
+   [E]    > -E,ĪTĒS
+
+#lietvĀrdi VI.deklinĀcija - sirds
+flag *T:
+   [S]    > -S,IJ
+   [S]    > -S,I
+   [S]    > -S,Ī
+
+#lietvĀrdi VI.deklinĀcija dsk.
+flag *n:
+   [S]    > -S,IS
+   [^DLNTSVZ]S    > -S,U
+   [D]S    > -DS,žU
+   [L]S    > -LS,ĻU
+   [^S]NS    > -NS,ŅU
+   [S]NS    > -SNS,ŠŅU
+   [V]S    > -S,JU
+   [Z]S    > -ZS,žU
+   [S]    > -S,ĪM
+   [S]    > -S,ĪS
+   [S]S    > -S,U
+   [^ĀUŪRS]TS    > -TS,ŠU
+   [ĀUŪRS]TS    > -TS,TU
+
+
+flag *o:
+   [S]    > -S,A #
+   [S]    > -S,Ā #  IVd vsk
+   [S]    > -S,I #   Id dsk
+   [S]    > -S,U #  IVd vsk
+   [S]    > -S,AM #
+   [S]    > -S,IEM # Id dsk
+   [S]    > -S,OS # Id dsk
+   [S]    > -S,US # Id dsk
+   [S]    > -S,O
+   [S]    > -S,AI # IVd vsk
+   [S]    > -S,AS # IVd vsk
+   [S]    > -S,ĀS # IVd dsk
+   [S]    > -S,ĀM # IVd dsk
+   [S]    > -S,IE
+   [S]    > -S,AIS      #not.
+   [S]    > -S,AJAM
+   [S]    > -S,AJĀ
+   [S]    > -S,AJAI
+   [S]    > -S,AJIEM
+   [S]    > -S,AJOS
+   [S]    > -S,AJĀM
+   [S]    > -S,AJĀS
+   [Š]    > -Š,Ā #   Id dsk IVd vsk
+   [Š]    > -Š,U #   Id dsk IVd vsk
+   [Š]    > -Š,O
+   [Š]    > -Š,AI # IVd dsk
+   [Š]    > -Š,AS # IVd dsk
+   [Š]    > -Š,ĀS # IVd dsk
+   [Š]    > -Š,ĀM # IVd dsk
+   [Š]    > -Š,IE
+   [Š]    > -Š,AIS      #not.
+   [Š]    > -Š,AJAM
+   [Š]    > -Š,AJĀ
+   [Š]    > -Š,AJAI
+   [Š]    > -Š,AJIEM
+   [Š]    > -Š,AJOS
+   [Š]    > -Š,AJĀM
+   [Š]    > -Š,AJĀS
+
+flag *Y:
+   [S]    > -S,ĀK
+   [S]    > -S,ĀKS
+   [S]    > -S,ĀKA
+   [S]    > -S,ĀKAS
+   [S]    > -S,ĀKAM
+   [S]    > -S,ĀKAI
+   [S]    > -S,ĀKU
+   [S]    > -S,ĀKĀ
+   [S]    > -S,ĀKI
+   [S]    > -S,ĀKIEM
+   [S]    > -S,ĀKĀM
+   [S]    > -S,ĀKUS
+   [S]    > -S,ĀKOS
+   [S]    > -S,ĀKĀS
+   [Š]    > -Š,ĀK
+   [Š]    > -Š,ĀKS
+   [Š]    > -Š,ĀKA
+   [Š]    > -Š,ĀKAS
+   [Š]    > -Š,ĀKAM
+   [Š]    > -Š,ĀKAI
+   [Š]    > -Š,ĀKU
+   [Š]    > -Š,ĀKĀ
+   [Š]    > -Š,ĀKI
+   [Š]    > -Š,ĀKIEM
+   [Š]    > -Š,ĀKĀM
+   [Š]    > -Š,ĀKUS
+   [Š]    > -Š,ĀKOS
+   [Š]    > -Š,ĀKĀS
+
+flag *a:
+   [S]    > -S,ĀKAIS
+   [S]    > -S,ĀKAJAM
+   [S]    > -S,ĀKAJAI
+   [S]    > -S,ĀKO
+   [S]    > -S,ĀKAJĀ
+   [S]    > -S,ĀKIE
+   [S]    > -S,ĀKAJIEM
+   [S]    > -S,ĀKAJĀM
+   [S]    > -S,ĀKAJOS
+   [S]    > -S,ĀKAJĀS
+   [Š]    > -Š,ĀKAIS
+   [Š]    > -Š,ĀKAJAM
+   [Š]    > -Š,ĀKAJAI
+   [Š]    > -Š,ĀKO
+   [Š]    > -Š,ĀKAJĀ
+   [Š]    > -Š,ĀKIE
+   [Š]    > -Š,ĀKAJIEM
+   [Š]    > -Š,ĀKAJĀM
+   [Š]    > -Š,ĀKAJOS
+   [Š]    > -Š,ĀKAJĀS
+
+flag *y:
+   [A]IS    > -AIS,Ā
+   [A]IS    > -AIS,ĀS
+   [A]IS    > -IS,JAM
+   [A]IS    > -IS,JAI
+   [A]IS    > -AIS,O
+   [A]IS    > -IS,JĀ
+   [A]IS    > -AIS,IE
+   [A]IS    > -IS,JIEM
+   [A]IS    > -IS,JĀM
+   [A]IS    > -AIS,OS
+   [A]IS    > -IS,JOS
+   [A]IS    > -IS,JĀS
+
+flag *q:
+   [I]    > -I,U        #skaitĻa vardi, kas beidzas ar i
+   [I]    > -I,AS
+   [I]    > -I,IEM
+   [I]    > -I,ĀM
+   [I]    > -I,ĀS
+   [I]    > -I,OS
+   [I]    > -I,US
+   [A]IS    > -AIS,Ā     #ŠĪ daĻa apraksta pirmo 10 kĀrtas sk. vĀrdu
+   [A]IS    > -AIS,O     #izdarĪbas
+   [A]IS    > -AIS,ĀS
+   [A]IS    > -AIS,OS
+   [A]IS    > -AIS,IE
+   [A]IS    > -IS,JAM
+   [A]IS    > -IS,JĀ
+   [A]IS    > -IS,JAI
+   [A]IS    > -IS,JIEM
+   [A]IS    > -IS,JOS
+   [A]IS    > -IS,JĀM
+   [A]IS    > -IS,JĀS
+   [T]    > AIS        #te sĀkas vienpadsmit un citi, kas beidzas ar t
+   [T]    > Ā        
+   [T]    > O
+   [T]    > ĀS
+   [T]    > OS
+   [T]    > IE
+   [T]    > AJAM
+   [T]    > AJĀ
+   [T]    > AJAI
+   [T]    > AJIEM
+   [T]    > AJOS
+   [T]    > AJĀM
+   [T]    > AJĀS
+   [Š]    > -Š,ŠAIS        #te sĀkas tie, kas beidzas ar Š
+   [Š]    > Ā        
+   [Š]    > O
+   [Š]    > ĀS
+   [Š]    > OS
+   [Š]    > IE
+   [Š]    > AJAM
+   [Š]    > AJĀ
+   [Š]    > AJAI
+   [Š]    > AJIEM
+   [Š]    > AJOS
+   [Š]    > AJĀM
+   [Š]    > AJĀS
+
